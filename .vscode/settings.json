@@ -1,0 +1,7 @@
+{
+  "cucumberautocomplete.steps": ["src/stepDefinitions/**/*.js"],
+  "cucumberautocomplete.syncfeatures": "src/features/**/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.formatOnSave": true
+}

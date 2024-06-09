@@ -4,5 +4,8 @@ const common = `
     --require src/stepDefitions/**/*.js
 `;
 module.exports = {
-  default: `${common} src/features/**/*.feature --parallel ${process.env.CUCUMBER_PARALLEL_WORKERS} --tags ${process.env.CUCUMBER_FILTER_TAGS}`
+  default: `${common} src/features/**/*.feature --parallel ${process.env.CUCUMBER_PARALLEL_WORKERS} --tags ${process.env.CUCUMBER_FILTER_TAGS}`,
+  allure: {
+    format: './cucumber/allureReporter.js'
+  }
 };

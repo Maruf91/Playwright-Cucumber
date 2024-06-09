@@ -7,14 +7,15 @@
     "cucumberTest": "cucumber-js --require cucumber.js --require src/stepDefinitions/**/*.js -f json:cucumber/cucumber_report.json --publish-quiet --",
     "cucumberReport": "node cucumber/reporter.js",
     "lint": "eslint --ignore-path .gitignore .",
-    "lint:prettier": "prettier --ignore-path .gitignore --write \"**/*.{js,json}\" && npm run lint --fix"
+    "lint:prettier": "prettier --ignore-path .gitignore --write \"**/*.{js,json}\" && npm run lint --fix",
+    "cucumberReport1": "node cucumber/allureReporter.js",
+    "deleteScreenshots": "node src/utils/functions.js removeScreenshots"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@cucumber/cucumber": "^7.3.2",
-    "chai": "^4.3.6",
     "cucumber-html-reporter": "^5.5.0",
     "dotenv": "^16.3.1",
     "eslint": "^8.40.0",
@@ -24,6 +25,8 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.31.2",
+    "allure-cucumberjs": "^2.9.2",
+    "allure-js-commons": "^2.9.2",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "2.8.8"

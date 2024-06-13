@@ -32,7 +32,7 @@ Before setting up the framework, ensure you have the following installed:
 ### Installation
 Clone the repository and install the dependencies:
 ```bash
-git clone <https://github.com/Maruf91/Playwright-Cucumber.git>
+git clone https://github.com/Maruf91/Playwright-Cucumber.git
 cd <repository-directory>
 npm install
 ```

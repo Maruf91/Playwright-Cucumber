@@ -11,10 +11,10 @@
     - [Step Definitions](#step-definitions)
 5. [Running Tests](#running-tests)
 6. [Reporting](#reporting)
-6. [Jenkins Integration](#jenkins-integration)
+7. [Jenkins Integration](#jenkins-integration)
     - [Jenkins Pipeline Configuration](#jenkins-pipeline-configuration)
-7. [Contributing](#contributing)
-8. [License](#license)
+8. [Contributing](#contributing)
+9. [License](#license)
 
 ## Introduction
 This repository contains a test automation framework using Playwright, Cucumber, and JavaScript. The framework enables behavior-driven development (BDD) for end-to-end testing, ensuring robust and maintainable test suites. It integrates seamlessly with Jenkins for continuous integration and delivery (CI/CD).

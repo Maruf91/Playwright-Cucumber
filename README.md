@@ -38,6 +38,7 @@ npm install
 
 ## Project Structure
 Outline the project structure to give users an idea of where to find and place their files:
+```bash
 .
 ├── features
 │   ├── step_definitions
@@ -53,21 +54,23 @@ Outline the project structure to give users an idea of where to find and place t
 ├── Jenkinsfile
 ├── package.json
 └── README.md
-
+```
 ## Writing Tests
 
 ### Creating Feature Files
 Feature files describe the test scenarios in a human-readable format:
-
+```bash
 Feature: Example feature
 
   Scenario: Example scenario
     Given I navigate to the homepage
     When I click on the login button
     Then I should see the login form
+```    
 ### Step Definitions
 Step definitions connect feature file steps to Playwright actions:
 
+```bash
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
 
@@ -82,6 +85,7 @@ When('I click on the login button', async function () {
 Then('I should see the login form', async function () {
     expect(await page.isVisible('#login-form')).toBe(true);
 });
+```
 
 ## Jenkins Integration
 

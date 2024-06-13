@@ -145,4 +145,4 @@ This is a portable framework.
 ## License
 There is no need of license to use the framework as it's using all the open source products.
 Individual products has their own open source license.
-## N.B This is developing framewrok, in future this framewrok will be more robust and more powerful.
+## N.B This is a developing framewrok, in future this framewrok will be more robust and more powerful.

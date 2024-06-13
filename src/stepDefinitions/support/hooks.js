@@ -1,5 +1,5 @@
 const playwright = require('@playwright/test');
-const { Before, After, BeforeAll, AfterAll, AfterStep, World } = require('@cucumber/cucumber');
+const { Before, After, BeforeAll, AfterAll, AfterStep } = require('@cucumber/cucumber');
 require('dotenv').config();
 const fs = require('fs');
 const { getDate } = require('../../utils/functions');

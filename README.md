@@ -10,6 +10,7 @@
     - [Creating Feature Files](#creating-feature-files)
     - [Step Definitions](#step-definitions)
 5. [Running Tests](#running-tests)
+6. [Reporting](#reporting)
 6. [Jenkins Integration](#jenkins-integration)
     - [Jenkins Pipeline Configuration](#jenkins-pipeline-configuration)
 7. [Contributing](#contributing)
@@ -22,38 +23,51 @@ This repository contains a test automation framework using Playwright, Cucumber,
 
 ### Prerequisites
 Before setting up the framework, ensure you have the following installed:
-- Node.js (>= 14.x)
-- npm (>= 6.x)
-- Playwright
-- Cucumber.js
-- Jenkins (for CI/CD)
+- Node.js (>= 18.x)
+- npm (>= 10.x)
+- Playwright (Latest)
+- Cucumber.js (Latest)
+- Jenkins (for CI/CD) (As per your Enterprise Project need)
 
 ### Installation
 Clone the repository and install the dependencies:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Maruf91/Playwright-Cucumber.git>
 cd <repository-directory>
 npm install
 ```
 
 ## Project Structure
-Outline the project structure to give users an idea of where to find and place their files:
+Below project structure has been maintained for the implemented framework:
 ```bash
 .
-├── features
-│   ├── step_definitions
-│   │   └── *.js
-│   ├── support
-│   │   └── hooks.js
-│   └── *.feature
-├── reports
 ├── src
-│   └── *.js
+│   ├── features
+│   │   └── *.feature
+│   ├── stepDefinitions
+│   │   ├── support
+│   │   │   └── hooks.js
+│   │   └── *.js
+│   ├── pageObjects
+│   │   └── *.js
+│   └── utils
+│       └── *.js
+├── .github
+├── .vscode
+├── cucumber
+├── reports
+├── node_modules
+├── testdata
+├── .env
+├── .eslintrc.js
 ├── .gitignore
-├── cucumber.json
+├── .prettierrc
+├── cucumber.js
 ├── Jenkinsfile
+├── package-lock.json
 ├── package.json
 └── README.md
+
 ```
 ## Writing Tests
 
@@ -86,12 +100,47 @@ Then('I should see the login form', async function () {
     expect(await page.isVisible('#login-form')).toBe(true);
 });
 ```
+## Running Tests
+
+### Before running the test case setup your .env file
+In this .env file you can setup your cucumber tags(Test cases/suites, test environment, testing url etc.)
+
+Use below command to run your test cases(it's customised)
+```bash
+
+npm run cucumberTest
+
+```
+## Reporting
+Cucumber HTML report is integrated for this framework where each step will take snap of the 
+application and place it in report along with pass/fail status.
+How to run report command to generate HTML report after running all the test cases:
+```bash
+
+npm run cucumberReport
+
+```
 
 ## Jenkins Integration
 
 ### Jenkins Pipeline Configuration
-Create a Jenkinsfile for setting up the CI/CD pipeline:
+## A jenkins pipeline has been developed from scratch to run this framework in remote system as part of CI/CT.
+## The pipeline has been already tested and proven. 
+The pipeline can be run on MAC/WINDOWS/UNIX system, its developed in such a way
+that it can handlle any type of remote system.
+
+The pipeline is JIRA XRAY integrated, i,e. it can update pass/fail status of the pre created manual 
+regression/smoke suites.
+
+To understand the pipeline and to integrate in your project please reach out to Owner of this project
+[mail id: mdmarufmallick@gmail.com]
 
 ## Contributing
+This is fully developed by myself from scratch.
+This is a portable framework.
+# Contributer: Md Maruf Mallick
 
 ## License
+There is no need of license to use the framework as it's using all the open source products.
+Individual products has their own open source license.
+## N.B This is developing framewrok, in future this framewrok will be more robust and more powerful.

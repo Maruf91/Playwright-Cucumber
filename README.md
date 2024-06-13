@@ -11,7 +11,7 @@
     - [Step Definitions](#step-definitions)
 5. [Running Tests](#running-tests)
 6. [Reporting](#reporting)
-7. [Jenkins Integration](#jenkins-integration)
+7. [Jenkins & JIRA XRAY Integration](#jenkins-integration)
     - [Jenkins Pipeline Configuration](#jenkins-pipeline-configuration)
 8. [Contributing](#contributing)
 9. [License](#license)
@@ -121,7 +121,7 @@ npm run cucumberReport
 
 ```
 
-## Jenkins Integration
+## Jenkins & JIRA XRAY Integration
 
 ### Jenkins Pipeline Configuration
 ```bash
@@ -133,7 +133,7 @@ The pipeline is JIRA XRAY integrated, i,e. it can update pass/fail status of the
 regression/smoke suites.
 
 To understand the pipeline and to integrate in your project please reach out to Owner of this project
-[mail-id: mdmarufmallick@gmail.com]
+[owner mail-id: mdmarufmallick@gmail.com]
 
 ```
 

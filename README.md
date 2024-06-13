@@ -124,21 +124,23 @@ npm run cucumberReport
 ## Jenkins Integration
 
 ### Jenkins Pipeline Configuration
-## A jenkins pipeline has been developed from scratch to run this framework in remote system as part of CI/CT.
-## The pipeline has been already tested and proven. 
-The pipeline can be run on MAC/WINDOWS/UNIX system, its developed in such a way
-that it can handlle any type of remote system.
+```bash
 
+A jenkins pipeline has been developed from scratch to run this framework in remote system as part of CI/CT.
+The pipeline has been already tested and proven. The pipeline can be run on MAC/WINDOWS/UNIX system
+, its developed in such a way that it can handlle any type of remote system.
 The pipeline is JIRA XRAY integrated, i,e. it can update pass/fail status of the pre created manual 
 regression/smoke suites.
 
 To understand the pipeline and to integrate in your project please reach out to Owner of this project
-[mail id: mdmarufmallick@gmail.com]
+[mail-id: mdmarufmallick@gmail.com]
+
+```
 
 ## Contributing
 This is fully developed by myself from scratch.
 This is a portable framework.
-# Contributer: Md Maruf Mallick
+`Contributer: Md Maruf Mallick`
 
 ## License
 There is no need of license to use the framework as it's using all the open source products.

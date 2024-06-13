@@ -1,15 +1,38 @@
-# Welcome to GitHub
+# Playwright-Cucumber-JavaScript Framework Documentation
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+3. [Project Structure](#project-structure)
+4. [Writing Tests](#writing-tests)
+    - [Creating Feature Files](#creating-feature-files)
+    - [Step Definitions](#step-definitions)
+5. [Running Tests](#running-tests)
+6. [Jenkins Integration](#jenkins-integration)
+    - [Jenkins Pipeline Configuration](#jenkins-pipeline-configuration)
+7. [Best Practices](#best-practices)
+8. [Contributing](#contributing)
+9. [License](#license)
 
-## Repositories
+## Introduction
+This repository contains a test automation framework using Playwright, Cucumber, and JavaScript. The framework enables behavior-driven development (BDD) for end-to-end testing, ensuring robust and maintainable test suites. It integrates seamlessly with Jenkins for continuous integration and delivery (CI/CD).
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+## Getting Started
 
-This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
+### Prerequisites
+Before setting up the framework, ensure you have the following installed:
+- Node.js (>= 14.x)
+- npm (>= 6.x)
+- Playwright
+- Cucumber.js
+- Jenkins (for CI/CD)
 
-## Describe your project
+### Installation
+Clone the repository and install the dependencies:
+```bash
+git clone <repository-url>
+cd <repository-directory>
+npm install
 
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
-
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)

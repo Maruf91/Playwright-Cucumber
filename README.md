@@ -34,6 +34,7 @@ Clone the repository and install the dependencies:
 git clone <repository-url>
 cd <repository-directory>
 npm install
+```
 
 ## Project Structure
 Outline the project structure to give users an idea of where to find and place their files:

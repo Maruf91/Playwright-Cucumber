@@ -17,7 +17,7 @@
 9. [License](#license)
 
 ## Introduction
-This repository contains a test automation framework using Playwright, Cucumber, and JavaScript. The framework enables behavior-driven development (BDD) for end-to-end testing, ensuring robust and maintainable test suites. It integrates seamlessly with Jenkins for continuous integration and delivery (CI/CD).
+This repository contains a test automation framework using Playwright, Cucumber, and JavaScript. The framework enables behavior-driven development (BDD) for end-to-end testing, ensuring robust and maintainable test suites. It integrates seamlessly with Jenkins for continuous integration and delivery (CI/CD). This framework covers UI and API testing both.
 
 ## Getting Started
 

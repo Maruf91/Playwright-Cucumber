@@ -78,7 +78,7 @@ const args = process.argv.slice(2);
 if (args[0] === 'removeScreenshots') {
   removeScreenshots();
 } else {
-  console.error('No screenshots to delete...');
+  console.log('No screenshots to delete...');
 }
 
 module.exports = {

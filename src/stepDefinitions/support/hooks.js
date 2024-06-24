@@ -1,7 +1,8 @@
 const playwright = require('@playwright/test');
 const { Before, After, BeforeAll, AfterAll, AfterStep } = require('@cucumber/cucumber');
+var { setDefaultTimeout } = require('@cucumber/cucumber');
+setDefaultTimeout(parseInt(process.env.DEFAULT_TIMEOUT) || 60000);
 require('dotenv').config();
-const fs = require('fs');
 const { getDate } = require('../../utils/functions');
 let browser;
 BeforeAll(async function () {
@@ -51,6 +52,7 @@ AfterAll(async function () {
 });
 
 Before(async function () {
+  console.log(`Default timeout is set as: ${process.env.DEFAULT_TIMEOUT} ms`);
   console.log('Create new context and page');
   global.context = await browser.newContext({
     viewport: null

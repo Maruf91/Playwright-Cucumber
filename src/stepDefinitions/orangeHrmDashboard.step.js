@@ -1,4 +1,4 @@
-const { Given, When, Then, defineStep } = require('@cucumber/cucumber');
+const { Given, When, Then } = require('@cucumber/cucumber');
 const { orangeHRMLoginPage } = require('./../pageObjects/orangeHRMLogin.page');
 const { orangeHRMDashboard } = require('./../pageObjects/orangeHRMDashboard.page');
 const loginPage = new orangeHRMLoginPage();

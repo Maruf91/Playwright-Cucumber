@@ -42,6 +42,7 @@ As part of this framework user needs to install a few extensions which are:
 1. Cucumber by Microsoft / Cucumber(Gherkin) Full support (Required settings are already written
 under settings.json file)
 2. ESLint
+
 Optional extensions: 
 1. vscode-icons for folder beautification
 

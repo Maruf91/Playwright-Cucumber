@@ -5,6 +5,7 @@
 2. [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
+    - [Extensions](#extensions-required)
 3. [Project Structure](#project-structure)
 4. [Writing Tests](#writing-tests)
     - [Creating Feature Files](#creating-feature-files)
@@ -36,6 +37,13 @@ git clone https://github.com/Maruf91/Playwright-Cucumber.git
 cd <repository-directory>
 npm install
 ```
+### Extensions required
+As part of this framework user needs to install a few extensions which are:
+1. Cucumber by Microsoft / Cucumber(Gherkin) Full support (Required settings are already written
+under settings.json file)
+2. ESLint
+Optional extensions: 
+1. vscode-icons for folder beautification
 
 ## Project Structure
 Below project structure has been maintained for the implemented framework:
@@ -68,6 +76,7 @@ Below project structure has been maintained for the implemented framework:
 ├── package.json
 └── README.md
 
+If your project has any client provided Artifactory, then you need to add one file at root level named as ".npmrc", where user needs to provide authentication details, when 'npm install' will download the modules it will check the vulnerabilities during runtime.
 ```
 ## Writing Tests
 

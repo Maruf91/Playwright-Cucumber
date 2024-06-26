@@ -37,7 +37,7 @@ const options = {
   metadata: {
     'App Version': 'Sample App 2.0.0',
     'Test Environment': `${process.env.TEST_ENVIRONMENT}`,
-    Browser: `${process.env.BROWSER}`,
+    Browser: `${process.env.PLAYWRIGHT_BROWSER}`,
     Platform: getPlatform()
   },
   screenshots: screenshotAttachments

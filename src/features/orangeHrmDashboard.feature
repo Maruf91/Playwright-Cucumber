@@ -2,7 +2,7 @@
 Feature: Validate dropdown menus and number of records are displaying on the page
   As an user
   I want to login into the application
-  And I want to validate dropdown menus and number records are displaying under Education sub menu.
+  and I want to validate dropdown menus and number records are displaying under Education sub menu.
 
   @OrangeHRM_Login_TestCase
   Scenario Outline: Login with valid credentials and validate admin page records
@@ -18,4 +18,4 @@ Feature: Validate dropdown menus and number of records are displaying on the pag
 
     Examples:
       | username | password | leftPanelMenu                                                                                   | numberOfRecords |
-      | Admin    | admin123 | Admin,PIM,Leave,Time,Recruitment,My Info,Performance,Dashboard,Directory,Maintenance,Claim,Buzz |               4 |
+      | Admin    | admin123 | Admin,PIM,Leave,Time,Recruitment,My Info,Performance,Dashboard,Directory,Maintenance,Claim,Buzz | 4               |
